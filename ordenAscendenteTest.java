@@ -42,7 +42,7 @@ public class ordenAscendenteTest {
 	
 	
 	@Test 
-	public void TestNullElement() {
+	public void TestPositive() {
 		list[0] = 1;
 		list[1] = 2;
 		list[2] = 3;
@@ -52,7 +52,7 @@ public class ordenAscendenteTest {
 	}
 	
 	@Test 
-	public void TestNullElement() {
+	public void TestNullNegative() {
 		list[0] = -1;
 		list[1] = 2;
 		list[2] = -3;
