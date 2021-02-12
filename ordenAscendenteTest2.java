@@ -27,14 +27,13 @@ public class ordenAscendenteTest2 {
    @Parameters
    public static Collection<Object[]> contarValues()
    {
-       return Arrays.asList (new Object [][] {{-1,-1,-1, false}, {-1,2,2,false}}); 
+       return Arrays.asList (new Object [][] {{-1,-1,-1, true}, {-1,2,2,true}}); 
    }
 
    @Test
    public void additionTest()
    {
-	   ordenAscendente o = new ordenAscendente();
-	   assertTrue ("Addition Test", result == o.ordenado(list));
+	   assertTrue ("Addition Test", result == ordenAscendente.ordenado(list));
    }
    
 }

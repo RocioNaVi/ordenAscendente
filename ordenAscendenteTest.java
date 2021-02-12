@@ -33,8 +33,7 @@ public class ordenAscendenteTest {
    {
       list = null;
       try {
-    	  ordenAscendente o = new ordenAscendente();
-    	  o.ordenado(list);
+    	  ordenAscendente.ordenado(list);
       } catch (NullPointerException e) {
          return;
       }
@@ -55,8 +54,7 @@ public class ordenAscendenteTest {
 		list[1] = 2;
 		list[2] = 3;
 		Boolean result = true;
-		ordenAscendente o = new ordenAscendente();
-		assertTrue(result == o.ordenado(list));
+		assertTrue(result == ordenAscendente.ordenado(list));
 	}
 	
 	@Test 
@@ -64,9 +62,18 @@ public class ordenAscendenteTest {
 		list[0] = -1;
 		list[1] = 2;
 		list[2] = -3;
-		Boolean result = false;
-		ordenAscendente o = new ordenAscendente();
-		assertTrue(result == o.ordenado(list));
+		boolean result = false;
+		assertTrue(result == ordenAscendente.ordenado(list));
+	}
+	
+	@Test 
+	public void TestIguales() {
+		list[0] = -1;
+		list[1] = 2;
+		list[2] = 3;
+		boolean result = true;
+		assertTrue(result == ordenAscendente.ordenado(list));
 	}
 	
 }
+
