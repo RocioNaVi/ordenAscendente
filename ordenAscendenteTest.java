@@ -78,4 +78,14 @@ public class ordenAscendenteTest {
 		assertTrue(result == ordenAscendente.ordenado(list));
 	}
 	
+		//C1:B1
+	@Test 
+	public void TestNuevo() {
+		list[0] = 2;
+		list[1] = 2;
+		list[2] = 3;
+		boolean result = true;
+		assertEquals(result, ordenAscendente.ordenado(list));
+	}
+	
 }
