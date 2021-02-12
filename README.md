@@ -13,6 +13,9 @@ C2: compuebo numeros negativos
 	B1 todos los números positivos
 	B2 todos los números negativos.
 	
+C3: Compruebo cuando hay numeros igaules
+	B1: test con umeros igaules pasa
+	
 
 En los test compruebo el orden con números negativos y positivos y compruebo que salte excepcion cuando la lista tiene algun elemento null o esta vacía.
 
