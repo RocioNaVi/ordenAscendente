@@ -1,6 +1,7 @@
 # ordenAscendente
 Examen git
 
+Para ejecutar y comprobar los test lo estoy haciendo medinate JUnit en eclipse.
 Utilizo los before y after para inicializar en cada test.
 
 Caracterizaciones:
@@ -14,7 +15,7 @@ C2: compuebo numeros negativos
 	B2 todos los números negativos.
 	
 C3: Compruebo cuando hay numeros igaules
-	B1: test con umeros igaules pasa
+	B1: test con numeros igaules pasa
 	
 
 En los test compruebo el orden con números negativos y positivos y compruebo que salte excepcion cuando la lista tiene algun elemento null o esta vacía.

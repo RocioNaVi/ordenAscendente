@@ -28,6 +28,7 @@ public class ordenAscendenteTest {
 		list = null;
 	}
 	
+	//C1:B1
    @Test
    public void testForNullList()
    {
@@ -40,23 +41,24 @@ public class ordenAscendenteTest {
       fail ("NullPointerException expected");
    }
 	
-	
+   //C1:B2
 	@Test (expected = NullPointerException.class)
 	public void TestNullElement() {
 		list[0] = (Integer) null;
 		list[1] = 1;
 	}
 	
-	
+	//C1:B3 Y //C2:B2
 	@Test 
 	public void TestPositive() {
 		list[0] = 1;
 		list[1] = 2;
 		list[2] = 3;
-		Boolean result = true;
+		boolean result = true;
 		assertTrue(result == ordenAscendente.ordenado(list));
 	}
 	
+	//C2:B2
 	@Test 
 	public void TestNullNegative() {
 		list[0] = -1;
@@ -66,9 +68,10 @@ public class ordenAscendenteTest {
 		assertTrue(result == ordenAscendente.ordenado(list));
 	}
 	
+	//C1:B1
 	@Test 
 	public void TestIguales() {
-		list[0] = -1;
+		list[0] = 2;
 		list[1] = 2;
 		list[2] = 3;
 		boolean result = true;
@@ -76,4 +79,3 @@ public class ordenAscendenteTest {
 	}
 	
 }
-
