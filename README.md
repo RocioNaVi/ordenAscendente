@@ -15,3 +15,6 @@ C2: compuebo numeros negativos
 	
 
 En los test compruebo el orden con números negativos y positivos y compruebo que salte excepcion cuando la lista tiene algun elemento null o esta vacía.
+
+No había leido el apartado de hacer el merge con la práctica, lo he hecho todo en la rama principal.
+
