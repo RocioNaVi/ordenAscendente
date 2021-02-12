@@ -10,6 +10,8 @@ import static org.junit.Assert.*;
 import org.junit.*;
 import org.junit.runners.Parameterized.Parameters;
 
+import findLast.findLast;
+
 import java.util.*;
 
 public class ordenAscendenteTest {
@@ -26,17 +28,23 @@ public class ordenAscendenteTest {
 		list = null;
 	}
 	
-	//Test para comprbar lista vacia
-	@Test (expected = NullPointerException.class)
-	public void TestNullList() {
-		list = null;
-		
-	}
+   @Test
+   public void testForNullList()
+   {
+      list = null;
+      try {
+    	  ordenAscendente o = new ordenAscendente();
+    	  o.ordenado(list);
+      } catch (NullPointerException e) {
+         return;
+      }
+      fail ("NullPointerException expected");
+   }
 	
 	
 	@Test (expected = NullPointerException.class)
 	public void TestNullElement() {
-		list[0] = null;
+		list[0] = (Integer) null;
 		list[1] = 1;
 	}
 	
